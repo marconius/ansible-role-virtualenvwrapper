@@ -1,6 +1,6 @@
 ---
 # defaults file for virtualenvwrapper
-virtualenvwrapper_version: 4.3.1
+virtualenvwrapper_version: 4.7.2
 virtualenvwrapper_shell_rc_file: "{{ lookup('env', 'HOME') }}/.{{ lookup('env', 'SHELL') | replace('/bin/','') }}rc"
 virtualenvwrapper_venvs_home: "{{ lookup('env', 'HOME') }}/.virtualenvs"
 virtualenvwrapper_venvs_project: "{{ lookup('env', 'HOME') }}/Devel"

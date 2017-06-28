@@ -23,7 +23,7 @@ Available variables are listed below, along with default values (see `defaults/m
 
 * `virtualenvwrapper_venvs_home = "{{ lookup('env', 'HOME') }}/.virtualenvs"` - The path to place your virtual environements (sets WORKON_HOME env variable).
 
-* `virtualenvwrapper_override_python = no` - Tells virtualenv not to look for python executable in $PATH, but set VIRTUALENVWRAPPER_PYTHON instead
+* `virtualenvwrapper_override_python_path = no` - Tells virtualenv not to look for python executable in $PATH, but set VIRTUALENVWRAPPER_PYTHON instead
 
 * `virtualenvwrapper_venvs_python = /usr/lib.python` - What to set VIRTUALENVWRAPPER_PYTHON to override_python is true
 
@@ -40,7 +40,6 @@ Example Playbook
     - hosts: servers
       roles:
          - role: "gcporras.virtualenvwrapper"
-           sudo: yes
            tags:
             - virtualenvwrapper
 License
